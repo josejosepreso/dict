@@ -1,3 +1,5 @@
+// TODO: make this multithreaded
+
 #include <algorithm>
 #include <cstring>
 #include <fstream>
@@ -28,7 +30,6 @@ int levenstein_recursive(const std::string &str1, const std::string &str2,
                            levenstein_recursive(str1, str2, str1length - 1, str2length - 1)));
 }
 
-// TODO: make this multithreaded
 int levenstein(const std::string &str1, const std::string &str2) {
   int m = str1.length();
   int n = str2.length();
